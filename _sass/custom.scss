@@ -1,0 +1,20 @@
+html { font-size: 95% !important; }
+/* 顶部导航菜单（About）整体靠左 */
+.masthead__menu {
+  justify-content: flex-start !important;
+}
+
+/* 如果还不动：把 menu 的左边距清掉 */
+.masthead__menu .greedy-nav {
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+}
+
+/* 有些布局会把 links 推到右边，直接覆盖 */
+.greedy-nav .visible-links {
+  margin-left: 0 !important;
+}
+
+.greedy-nav .visible-links { 
+  justify-content: flex-start !important; 
+}
