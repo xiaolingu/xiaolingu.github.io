@@ -4,6 +4,39 @@
 
 @import "minimal-mistakes";
 
+/* === masthead 菜单强制最左 === */
+
+/* 让头部容器仍按主题宽度居中（不贴屏幕边） */
+.masthead__inner-wrap {
+  max-width: 80em;   /* 你也可以改成 100% 看效果 */
+  margin: 0 auto;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* 关键：把导航菜单推到最左 */
+.masthead__menu {
+  margin-left: 0 !important;
+}
+
+/* 关键：让 ul 用 flex 并靠左对齐 */
+.masthead__menu .visible-links {
+  display: flex !important;
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+}
+
+/* 关键：不要让第一个菜单项有多余左边距 */
+.masthead__menu .visible-links li:first-child a {
+  padding-left: 0 !important;
+}
+
+/* 可选：菜单项之间的间距 */
+.masthead__menu-item {
+  margin-left: 0 !important;
+  margin-right: 1rem;
+}
+
 /* ===== 你的覆盖写在这里，保证在主题CSS之后输出 ===== */
 
 /* 整体字体缩小：例如 92%（你想缩小多少就改这里） */
