@@ -58,9 +58,9 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
+  name   : "Xiaolin Gu"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "Nanjing University of Posts and Telecommunications"
   links:
     - label: "Website"
       icon: "fas fa-fw fa-link"
@@ -93,8 +93,6 @@ defaults:
       path: ""
       type: posts
     values:
-      custom_css:
-        - /assets/css/custom.css
       layout: single
       author_profile: true
       read_time: true
@@ -106,8 +104,6 @@ defaults:
       path: "_pages"
       type: pages
     values:
-      custom_css:
-        - /assets/css/custom.css
       layout: single
       author_profile: true
 

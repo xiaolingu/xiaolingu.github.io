@@ -8,7 +8,7 @@
 @import "minimal-mistakes";
 
 /* 2) 再写你的覆盖（放在 import 后面才会覆盖） */
-:root { --font-scale: 0.92; }     // 整体缩小 8%
+:root { --font-scale: 0.95; }     // 整体缩小 8%
 
 html { font-size: calc(16px * var(--font-scale)); }
 
