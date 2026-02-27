@@ -13,8 +13,6 @@ group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jemoji"
   gem "jekyll-include-cache"
-  gem "jekyll-algolia"
   gem "minimal-mistakes-jekyll"
-  # 建议也加上（Ruby 3 常见）
   gem "webrick"
 end

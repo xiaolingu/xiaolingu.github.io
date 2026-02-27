@@ -1,8 +1,31 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
 
-@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
-@import "minimal-mistakes";        // 主题主体样式
-@import "custom";                 // 你自己的覆盖
+@import "minimal-mistakes";
+
+/* ===== 你的覆盖写在这里，保证在主题CSS之后输出 ===== */
+
+/* 整体字体缩小：例如 92%（你想缩小多少就改这里） */
+html { font-size: 92%; }
+
+/* 正文区域也可以更精确一点（可选） */
+.page__content { font-size: 1rem; }
+
+/* 顶部导航 About 位置：不要贴太左，靠近标题区域 */
+.masthead__inner-wrap {
+  max-width: 80em;   /* 和正文容器类似的宽度，可按需调 */
+  margin: 0 auto;    /* 居中容器 */
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+/* 让右侧菜单不要顶到最右边，而是跟容器对齐 */
+.masthead__menu {
+  justify-content: flex-start;
+}
+
+/* 让站点标题和菜单之间有点间距 */
+.masthead__menu-item {
+  margin-left: 1rem;
+}
