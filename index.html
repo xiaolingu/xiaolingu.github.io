@@ -2,6 +2,23 @@
 # You don't need to edit this file, it's empty on purpose.
 # Edit theme's home layout instead if you wanna make some changes
 # See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: single
 author_profile: true
+show_posts: false      # 关闭文章列表
+paginate: 0           # turn off the paginator so the <h3> never renders
+permalink: /
 ---
+{% capture md %}
+# Xiaolin Gu's Homepage
+
+I am an assistant professor in School of Computer Science, Nanjing University of Posts and Telecommunications (NJUPT).
+
+
+
+- 列表 1
+- 列表 2
+
+> 引用
+{% endcapture %}
+
+{{ md | markdownify }}

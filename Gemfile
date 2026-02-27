@@ -3,8 +3,8 @@ source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 
 gem "tzinfo-data"
-gem "wdm", "~> 0.1.0" if Gem.win_platform?
-
+# gem "wdm", "~> 0.1.0" if Gem.win_platform?
+gem "wdm", "~> 0.2.0", platforms: [:mingw, :mswin, :x64_mingw]
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-paginate"
@@ -14,4 +14,7 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-include-cache"
   gem "jekyll-algolia"
+  gem "minimal-mistakes-jekyll"
+  # 建议也加上（Ruby 3 常见）
+  gem "webrick"
 end
